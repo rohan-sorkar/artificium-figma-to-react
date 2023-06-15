@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.border-gradient {
+  border-radius: 8px;
+  border: 2px solid;
+  background-image: linear-gradient(#82DBF7, #B6F09C), 
+  linear-gradient(to right, #82DBF7, #B6F09C);
+  border-image: linear-gradient(to right, #82DBF7, #B6F09C);
+  border-image-slice: 1;
+}
+.border-shadow {
+  box-shadow: 0px 0px 0px 4px #84dcf53d;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(#82DBF7, #B6F09C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shadow-circle-yellow{
+  box-shadow: 0px 0px 64px 0px #FFD14729;
+}
+.shadow-circle-green{
+  box-shadow: 0px 0px 64px 0px #B6F09C29;
+}
+.shadow-circle-blue{
+  box-shadow: 0px 0px 64px 0px #82DBF729;
+}
+.shadow-circle-purple{
+  box-shadow: 0px 0px 64px 0px #BD9AF829;
+}
+.bg-glass{
+  background: linear-gradient(117.58deg, rgba(215, 237, 237, 0.16) -47.79%, rgba(204, 235, 235, 0) 100%);
+}
+.bg-modal{
+  background: rgba(26, 29, 33, 0.96);
+/* Glass/Modal */
+
+box-shadow: 0px 24px 64px -16px rgba(0, 0, 0, 0.24), inset 16px 24px 64px -24px rgba(255, 255, 255, 0.04), inset 0px 8px 12px rgba(255, 255, 255, 0.04);
+border-radius: 16px;
+}
+.bg-blur{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+.badge-glass-bg {
+  background: linear-gradient(117.58deg, rgba(215, 237, 237, 0.16) -47.79%, rgba(204, 235, 235, 0) 100%);
+/* Glass/Stroke */
+
+border-top: 1px solid rgba(255, 255, 255, 0.08);
+border-radius: 12px;
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
